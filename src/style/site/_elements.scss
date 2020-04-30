@@ -1,10 +1,10 @@
 blockquote,
 q {
-  quotes: "" "";
+  quotes: """";
 }
 
 hr {
-  background-color: $main-colour;
+  background-color: $color-text--disabled;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
@@ -23,19 +23,22 @@ ol {
   list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
   margin-bottom: 0;
   margin-left: 0.5em;
 }
 
 img {
-  height: auto; /* Make sure images are scaled correctly. */
-  max-width: 100%; /* Adhere to container width. */
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
 }
 
 figure {
-  margin: 0; /* Extra wide images within figure tags don't overflow the content area. */
+  margin: 0;
+  /* Extra wide images within figure tags don't overflow the content area. */
 }
 
 /* Make sure embeds and iframes fit their containers. */
