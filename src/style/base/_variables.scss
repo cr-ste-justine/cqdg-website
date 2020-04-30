@@ -1,8 +1,19 @@
 // --------------------------------
 // Colours
 // --------------------------------
-$main-colour: #212121;
-$accent-colour: #d84445;
+$color-text: #0D4B73;
+$color-text--secondary: #457DA1;
+$color-text--disabled: #8BABC1;
+
+$color-brand-blue: #00AEEF;
+$color-brand-blue--medium: #C7E8F5;
+$color-brand-blue--light: #F5FBFD;
+$color-brand-yellow: #FFB600;
+$color-brand-red: #C54B38;
+$color-brand-green: #A8AD00;
+
+$gradient--dark-to-light: linear-gradient(268deg, #28AAE2 0%, #006095 98%);
+$gradient--light-to-dark: linear-gradient(268deg, #006095 0%, #28AAE2 98%);
 
 // --------------------------------
 // Typography
