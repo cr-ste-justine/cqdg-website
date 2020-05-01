@@ -1,0 +1,16 @@
+// Section background colours -------
+.section {
+  &--gradient {
+    background: $gradient--dark-to-light;
+    color: #FFF;
+  }
+
+  &--gradient-reversed {
+    background: $gradient--light-to-dark;
+    color: #FFF;
+  }
+
+  &--with-tint {
+    background: $color-brand-blue--light;
+  }
+}
