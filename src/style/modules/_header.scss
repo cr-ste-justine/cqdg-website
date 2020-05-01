@@ -1,1 +1,9 @@
+.header {
+  grid-row: 1;
+  display: grid;
+}
 
+.language-switcher {
+  justify-self: end;
+  align-self: center;
+}
