@@ -14,3 +14,12 @@
     background: $color-brand-blue--light;
   }
 }
+
+// Hero -------
+.hero {
+  .site-logo {
+    h1 {
+      @include visually-hidden();
+    }
+  }
+}
