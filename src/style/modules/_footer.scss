@@ -4,6 +4,13 @@
 
   a {
     color: $color-brand-yellow;
-    text-decoration: none;
+    border: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border-bottom: 1px dotted;
+      background: none;
+    }
   }
 }

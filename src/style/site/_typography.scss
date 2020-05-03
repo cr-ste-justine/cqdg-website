@@ -9,6 +9,15 @@ body {
   line-height: 1.5;
 }
 
+// Parapgraphs -----------
+.lead {
+  font-size: 1.8rem;
+}
+
+.lead--large {
+  font-size: 2.4rem;
+}
+
 // Headers ---------------
 h1,
 h2,
@@ -77,4 +86,30 @@ li>ul,
 li>ol {
   margin-bottom: 0;
   margin-left: 0.5em;
+}
+
+// Links -----------
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px dotted;
+  transition: all 0.2s ease;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: $color-brand-blue--medium;
+    border-bottom-color: transparent;
+  }
+}
+
+.section--gradient a {
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: $color-text;
+    border-bottom-style: solid;
+
+  }
 }

@@ -6,4 +6,26 @@
 .language-switcher {
   justify-self: end;
   align-self: center;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: $color-text;
+    border: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      border: none;
+      background: lighten($color-text, 5);
+    }
+  }
+
 }
