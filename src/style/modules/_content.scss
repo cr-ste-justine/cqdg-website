@@ -57,3 +57,36 @@
     }
   }
 }
+
+// Platform projects -------
+.section-projects {
+
+  @include breakpoint(mintablet) {
+    grid-template-rows: 3.2rem auto 10rem;
+
+    .wrapper--content {
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 24px;
+    }
+
+    .content__copy {
+      grid-row: 1;
+      grid-column: 1/span 4;
+    }
+
+    .content__figure {
+      grid-row: 1;
+      grid-column: 5/-1;
+      justify-self: end;
+      transform: translateY(50%);
+      width: 980px;
+    }
+  }
+}
+
+// Security -------
+.section-security {
+  .wrapper--content {
+    margin-top: 12.8rem;
+  }
+}
