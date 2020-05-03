@@ -28,3 +28,9 @@ iframe,
 object {
   max-width: 100%;
 }
+
+.content__figure--with-elevation {
+  img {
+    filter: drop-shadow($elevation-1);
+  }
+}
