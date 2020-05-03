@@ -1,4 +1,8 @@
 .footer-site {
+  @include breakpoint(mindesktop) {
+    grid-template-rows: 6.4rem auto 6.4rem;
+  }
+
   color: #FFF;
   background: $color-text;
 
@@ -11,6 +15,12 @@
     &:hover {
       border-bottom: 1px dotted;
       background: none;
+    }
+  }
+
+  .content {
+    &__figure {
+      opacity: 0.5;
     }
   }
 }
