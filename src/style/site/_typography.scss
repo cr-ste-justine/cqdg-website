@@ -23,7 +23,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 600;
+  font-family: $heading-font;
 }
 
 h1 {
@@ -41,6 +41,7 @@ h3 {
 .title {
   &--uber {
     font-size: 3.0rem;
+    line-height: 1.2;
   }
 
   &--with-pill {
@@ -111,5 +112,19 @@ a {
     background: $color-text;
     border-bottom-style: solid;
 
+  }
+}
+
+// Lighter weights on dark backgrounds
+.section--gradient,
+.section--gradient-reversed,
+.footer-site {
+  font-weight: 300;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 400;
   }
 }
