@@ -27,3 +27,8 @@
     align-items: center;
   }
 }
+
+// remove extra vertical space between two white sections
+.section+.section {
+  grid-template-rows: 0 auto 12.8rem;
+}
