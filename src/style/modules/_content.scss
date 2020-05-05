@@ -90,6 +90,7 @@
     .wrapper--content {
       grid-template-columns: repeat(12, 1fr);
       grid-gap: 24px;
+      align-items: center;
     }
 
     .content__copy {
@@ -98,6 +99,10 @@
 
     .content__figure {
       grid-column: 1/-1;
+
+      @include breakpoint(desktop) {
+        max-width: 800px;
+      }
     }
   }
 
@@ -117,6 +122,27 @@
       width: 980px;
     }
   }
+
+  @include breakpoint(minjumbo) {
+    grid-template-rows: 12.8rem 600px 0rem;
+
+    .wrapper--content {
+      align-items: unset;
+    }
+
+    .content__copy {
+      grid-column: 1/span 4;
+    }
+
+    .content__figure {
+      grid-column: 1/-1;
+      transform: none;
+      width: unset;
+      position: relative;
+      top: 160px;
+      right: -200px;
+    }
+  }
 }
 
 // Security -------
@@ -124,6 +150,10 @@
   .wrapper--content {
     @include breakpoint(mindesktop) {
       margin-top: 12.8rem;
+    }
+
+    @include breakpoint(minjumbo) {
+      margin-top: 21.6rem;
     }
   }
 }
