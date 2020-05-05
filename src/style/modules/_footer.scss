@@ -23,4 +23,32 @@
       opacity: 0.5;
     }
   }
+
+  // Footer on small screens
+  @include breakpoint(tablet) {
+    .wrapper--content {
+      align-items: center;
+    }
+
+    .content {
+
+      &__copy,
+      &__figure {
+        grid-row: 1;
+        grid-column: 1;
+      }
+
+      &__copy {
+        z-index: 10;
+      }
+
+      &__figure {
+        opacity: 0.2;
+      }
+    }
+
+    .alert {
+      justify-self: center;
+    }
+  }
 }
