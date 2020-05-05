@@ -85,13 +85,24 @@
     max-width: unset;
   }
 
-  @include breakpoint(mintablet) {
-    grid-template-rows: 3.2rem auto 10rem;
+  @include breakpoint(minlaptop) {
 
     .wrapper--content {
       grid-template-columns: repeat(12, 1fr);
       grid-gap: 24px;
     }
+
+    .content__copy {
+      grid-column: 1/span 8;
+    }
+
+    .content__figure {
+      grid-column: 1/-1;
+    }
+  }
+
+  @include breakpoint(mindesktop) {
+    grid-template-rows: 3.2rem auto 10rem;
 
     .content__copy {
       grid-row: 1;
@@ -111,7 +122,9 @@
 // Security -------
 .section-security {
   .wrapper--content {
-    margin-top: 12.8rem;
+    @include breakpoint(mindesktop) {
+      margin-top: 12.8rem;
+    }
   }
 }
 
