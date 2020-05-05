@@ -20,8 +20,11 @@
 }
 
 .wrapper--content {
+  display: grid;
+  justify-items: center;
+  grid-gap: 24px;
+
   @include breakpoint(mintablet) {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 128px;
     align-items: center;
@@ -30,5 +33,9 @@
 
 // remove extra vertical space between two white sections
 .section+.section {
-  grid-template-rows: 0 auto 12.8rem;
+  grid-template-rows: 0 auto 6.4rem;
+
+  @include breakpoint(mindesktop) {
+    grid-template-rows: 0 auto 12.8rem;
+  }
 }

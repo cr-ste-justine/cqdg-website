@@ -15,6 +15,17 @@
   }
 }
 
+// Images -----
+.content__figure {
+  @include breakpoint(minphablet) {
+    max-width: 360px;
+  }
+
+  @include breakpoint(minlaptop) {
+    max-width: unset;
+  }
+}
+
 // Hero -------
 .hero {
   background: url('images/pills-bg.svg ') no-repeat,
@@ -29,6 +40,10 @@
   }
 
   &__image {
+    @include breakpoint(tablet) {
+      display: none;
+    }
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +81,10 @@
 // Platform projects -------
 .section-projects {
 
+  .content__figure {
+    max-width: unset;
+  }
+
   @include breakpoint(mintablet) {
     grid-template-rows: 3.2rem auto 10rem;
 
@@ -93,5 +112,15 @@
 .section-security {
   .wrapper--content {
     margin-top: 12.8rem;
+  }
+}
+
+// Interoperable ---
+.section-interoperable {
+  @include breakpoint(tablet) {
+    .content__figure {
+      grid-row: 1;
+    }
+
   }
 }
