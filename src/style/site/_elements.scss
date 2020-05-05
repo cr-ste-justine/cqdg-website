@@ -34,3 +34,18 @@ object {
     filter: drop-shadow($elevation-1);
   }
 }
+
+// SVG defaults and icons
+svg {
+  color: inherit;
+  fill: currentcolor
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor
+}

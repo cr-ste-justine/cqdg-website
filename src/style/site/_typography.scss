@@ -18,6 +18,29 @@ body {
   font-size: 2.4rem;
 }
 
+.alert {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 0.5em 1em 0.5em 0.5em;
+  border-radius: 4px;
+  font-weight: normal;
+  border: 1px solid;
+
+  .icon {
+    margin: 0.05em 0.8em 0 0;
+    width: 1.4em;
+    height: 1.4em;
+    opacity: 0.8;
+    flex-shrink: 0;
+  }
+
+  &--info {
+    color: $color-text;
+    background: $color-brand-blue--medium;
+    border-color: darken($color-brand-blue--medium, 8);
+  }
+}
+
 // Headers ---------------
 h1,
 h2,
