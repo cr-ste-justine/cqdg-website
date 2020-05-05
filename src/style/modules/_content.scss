@@ -85,7 +85,7 @@
     max-width: unset;
   }
 
-  @include breakpoint(minlaptop) {
+  @include breakpoint(mintablet) {
 
     .wrapper--content {
       grid-template-columns: repeat(12, 1fr);
