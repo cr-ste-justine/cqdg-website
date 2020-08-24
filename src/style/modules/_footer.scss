@@ -1,4 +1,4 @@
-.footer-site {
+.section-contact {
   @include breakpoint(mindesktop) {
     grid-template-rows: 6.4rem auto 6.4rem;
   }
@@ -7,7 +7,7 @@
   background: $color-text;
 
   a {
-    color: $color-brand-yellow;
+    color: $color-brand-yellow-5;
     border: none;
 
     &:active,
