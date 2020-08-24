@@ -9,10 +9,12 @@
   a {
     color: $color-brand-yellow-5;
     border: none;
+    padding-bottom: 0.15em;
 
     &:active,
     &:focus,
     &:hover {
+      color: $color-brand-yellow-4;
       border-bottom: 1px dotted;
       background: none;
     }
