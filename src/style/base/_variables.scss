@@ -73,8 +73,9 @@ $color-brand-green: $color-brand-green-6;
 $gradient--dark-to-light: linear-gradient(268deg, #28AAE2 0%, #006095 98%);
 $gradient--light-to-dark: linear-gradient(268deg, #006095 0%, #28AAE2 98%);
 
-$elevation-1: 0px 2px 8px rgba(#0D669F, 0.15);
-$elevation-2: 0px 4px 12px rgba(#0D669F, 0.15);
+$elevation-1: 0px 2px 4px rgba(#0D669F, 0.15);
+$elevation-2: 0px 2px 8px rgba(#0D669F, 0.15);
+$elevation-3: 0px 4px 12px rgba(#0D669F, 0.15);
 
 // --------------------------------
 // Typography
