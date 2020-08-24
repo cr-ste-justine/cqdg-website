@@ -1,21 +1,80 @@
 // --------------------------------
-// Colours
+// Colours Base
 // --------------------------------
-$color-text: #0D4B73;
-$color-text--secondary: #457DA1;
-$color-text--disabled: #8BABC1;
+$color-white: #ffffff;
+$color-neutral-10: #003457;
+$color-neutral-9: #18486b;
+$color-neutral-8: #305c7e;
+$color-neutral-7: #486f90;
+$color-neutral-6: #6082a1;
+$color-neutral-5: #7896b2;
+$color-neutral-4: #90a9c1;
+$color-neutral-3: #b5c6d8;
+$color-neutral-2: #d8e1eb;
+$color-neutral-1: #f0f3f8;
+$color-neutral-0: #f8f9fc;
+$color-brand-blue-1: #f2fbfe;
+$color-brand-blue-2: #c2ecfb;
+$color-brand-blue-3: #91dcf8;
+$color-brand-blue-4: #61cdf5;
+$color-brand-blue-5: #31bdf2;
+$color-brand-blue-6: #00aeef;
+$color-brand-blue-7: #0093cd;
+$color-brand-blue-8: #0075a2;
+$color-brand-blue-9: #005673;
+$color-brand-blue-10: #003545;
+$color-brand-yellow-1: #fffbf2;
+$color-brand-yellow-2: #ffeec2;
+$color-brand-yellow-3: #ffe091;
+$color-brand-yellow-4: #ffd261;
+$color-brand-yellow-5: #ffc431;
+$color-brand-yellow-6: #d19900;
+$color-brand-yellow-7: #a27b00;
+$color-brand-yellow-9: #735a00;
+$color-brand-yellow-10: #453700;
+$color-brand-green-1: #fbfbf2;
+$color-brand-green-2: #eaebc2;
+$color-brand-green-3: #dadc91;
+$color-brand-green-4: #c9cc61;
+$color-brand-green-5: #b9bd31;
+$color-brand-green-6: #a8ad00;
+$color-brand-green-7: #909500;
+$color-brand-green-8: #757900;
+$color-brand-green-9: #575a00;
+$color-brand-green-10: #363800;
+$color-brand-red-1: #fcf6f5;
+$color-brand-red-2: #f1d4cf;
+$color-brand-red-3: #e6b2a9;
+$color-brand-red-4: #db8f84;
+$color-brand-red-5: #d06d5e;
+$color-brand-red-6: #c54b38;
+$color-brand-red-7: #a73928;
+$color-brand-red-8: #86291b;
+$color-brand-red-9: #631b10;
+$color-brand-red-10: #3d0f08;
 
-$color-brand-blue: #00AEEF;
-$color-brand-blue--medium: #C7E8F5;
-$color-brand-blue--light: #F5FBFD;
-$color-brand-yellow: #FFB600;
-$color-brand-red: #C54B38;
-$color-brand-green: #A8AD00;
+
+
+// --------------------------------
+// Colours Text
+// --------------------------------
+$color-text: $color-neutral-9;
+$color-text--secondary: $color-neutral-7;
+$color-text--disabled: $color-neutral-4;
+
+// --------------------------------
+// Colours Brand
+// --------------------------------
+$color-brand-blue: $color-brand-blue-6;
+$color-brand-yellow: $color-brand-yellow-6;
+$color-brand-red: $color-brand-red-6;
+$color-brand-green: $color-brand-green-6;
 
 $gradient--dark-to-light: linear-gradient(268deg, #28AAE2 0%, #006095 98%);
 $gradient--light-to-dark: linear-gradient(268deg, #006095 0%, #28AAE2 98%);
 
-$elevation-1: 0px 2px 3px rgba($color-text, 0.15);
+$elevation-1: 0px 2px 8px rgba(#0D669F, 0.15);
+$elevation-2: 0px 4px 12px rgba(#0D669F, 0.15);
 
 // --------------------------------
 // Typography

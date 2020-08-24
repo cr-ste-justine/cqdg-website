@@ -38,8 +38,8 @@ body {
 
   &--info {
     color: $color-text;
-    background: $color-brand-blue--medium;
-    border-color: darken($color-brand-blue--medium, 8);
+    background: $color-brand-blue-2;
+    border-color: darken($color-brand-blue-2, 8);
   }
 }
 
@@ -128,7 +128,7 @@ a {
   &:active,
   &:focus,
   &:hover {
-    background: $color-brand-blue--medium;
+    background: $color-brand-blue-2;
     border-bottom-color: transparent;
   }
 }
