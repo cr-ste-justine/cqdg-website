@@ -24,7 +24,7 @@
     }
   }
 
-  // Footer on small screens
+  // Contact on small screens
   @include breakpoint(tablet) {
     .wrapper--content {
       align-items: center;
@@ -49,6 +49,56 @@
 
     .alert {
       justify-self: center;
+    }
+  }
+}
+.footer-site {
+  grid-template-rows: 2.4rem auto 2.4rem;
+
+  background: $color-neutral-0;
+
+  &__content {
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    display: flex;
+    color: $color-text--secondary;
+    font-size: 1.4rem;
+    line-height: 1.428571429;
+  }
+
+  &__copy {
+    @include breakpoint(tablet) {
+      text-align: center;
+      margin: 0 0 24px 0;
+    }
+
+    @include breakpoint(mintablet) {
+      margin: 0 24px 0 0;
+
+      align-self: flex-end;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+
+    a {
+      border: none;
+      display: flex;
+
+      &:active,
+      &:focus,
+      &:hover {
+        background: none;
+      }
+    }
+
+    a+a {
+      margin-left: 24px;
     }
   }
 }
